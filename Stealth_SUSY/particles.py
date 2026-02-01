@@ -9,6 +9,35 @@ import parameters as Param
 
 import propagators as Prop
 
+S = Particle(pdg_code = 9900011,          
+             name = 'S',
+             antiname = 'S~',
+             spin = 1,                    
+             color = 1,                   
+             mass = Param.MS,             
+             width = Param.ZERO,          
+             texname = 'S',
+             antitexname = '\\tilde{S}',
+             charge = 0,                  
+             GhostNumber = 0,
+             Y = 0)                       
+
+S__tilde__ = S.anti()                     
+
+
+S1 = Particle(pdg_code = 9900012,        
+              name = 'S1',
+              antiname = 'S1',            
+              spin = 2,                    
+              color = 1,                   
+              mass = Param.MS1,            
+              width = Param.ZERO,
+              texname = '\\tilde{S}_1',
+              antitexname = '\\tilde{S}_1',
+              charge = 0,
+              GhostNumber = 0,
+              Y = 0)
+
 a = Particle(pdg_code = 22,
              name = 'a',
              antiname = 'a',
