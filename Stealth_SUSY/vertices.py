@@ -29,7 +29,7 @@ V_2197 = Vertex(name = 'V_2197',
 V_2198 = Vertex(name = 'V_2198',
               particles = [ P.S, P.g, P.g ],
               color = [ 'f(2,3,4)' ],
-              lorentz = [ L.VVS1 ],
+              lorentz = [ L.SVV1 ],
               couplings = {(0,0):C.GC_eff_Sgg})
 
 V_1 = Vertex(name = 'V_1',
