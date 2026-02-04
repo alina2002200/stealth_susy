@@ -13,7 +13,7 @@ from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 MS = Parameter(name = 'MS',
                nature = 'external',
                type = 'real',
-               value = 180.0,
+               value = 198.0,
                texname = 'M_S',
                lhablock = 'MASS',
                lhacode = [9900011])
@@ -21,7 +21,7 @@ MS = Parameter(name = 'MS',
 MS1 = Parameter(name = 'MS1',
                 nature = 'external',
                 type = 'real',
-                value = 200.0, 
+                value = 220.0, 
                 texname = 'M_{\\tilde{S}_1}',
                 lhablock = 'MASS',
                 lhacode = [9900012]) 
