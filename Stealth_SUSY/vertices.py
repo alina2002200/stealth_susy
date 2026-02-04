@@ -8,6 +8,29 @@ import particles as P
 import couplings as C
 import lorentz as L
 
+V_2195 = Vertex(name = 'V_2195',
+              particles = [ P.S1__tilde__, P.Gravitino, P.S ],
+              color = [ '1' ],
+              lorentz = [ L.RFS1 ],
+              couplings = {(0,0):C.GC_S1SGrav})
+
+V_2196 = Vertex(name = 'V_2196',
+              particles = [ P.S1, P.Gravitino__tilde__, P.S__tilde__ ],
+              color = [ '1' ],
+              lorentz = [ L.RFS1 ],
+              couplings = {(0,0):C.GC_S1SGrav})
+
+V_2197 = Vertex(name = 'V_2197',
+              particles = [ P.S, P.go, P.go ],
+              color = [ 'T(2,3,4)' ],  # Глюино в присоединенном представлении
+              lorentz = [ L.FFS1, L.FFS12 ],
+              couplings = {(0,0):C.GC_Sgogo, (0,1):C.GC_Sgogo})
+
+V_2198 = Vertex(name = 'V_2198',
+              particles = [ P.S, P.g, P.g ],
+              color = [ 'f(2,3,4)' ],
+              lorentz = [ L.VVS1 ],
+              couplings = {(0,0):C.GC_eff_Sgg})
 
 V_1 = Vertex(name = 'V_1',
              particles = [ P.h01, P.h01, P.h02 ],
