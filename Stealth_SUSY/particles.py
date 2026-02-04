@@ -25,18 +25,18 @@ S = Particle(pdg_code = 9900011,
 S__tilde__ = S.anti()                     
 
 
-S1 = Particle(pdg_code = 9900012,        
+S1 = Particle(pdg_code = 9900012,
               name = 'S1',
-              antiname = 'S1',            
-              spin = 2,                    
-              color = 1,                   
-              mass = Param.MS1,            
+              antiname = 'S1~',
+              spin = 2,
+              color = 1,
+              mass = Param.MS1,
               width = Param.ZERO,
               texname = '\\tilde{S}_1',
               antitexname = '\\tilde{S}_1',
-              charge = 0,
-              GhostNumber = 0,
-              Y = 0)
+              charge = 0)
+
+S1__tilde__ = S1.anti()
 
 
 a = Particle(pdg_code = 22,
