@@ -8,6 +8,12 @@ import particles as P
 import couplings as C
 import lorentz as L
 
+V_S_n1n1 = Vertex(name = 'V_S_n1n1',
+                 particles = [ P.S, P.n1, P.n1 ],
+                 color = [ '1' ],
+                 lorentz = [ L.FFS1, L.FFS12 ],
+                 couplings = {(0,0):C.GC_Sn1n1, (0,1):C.GC_Sn1n1})
+
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.S1__tilde__, P.grv, P.S ],
               color = [ '1' ],
