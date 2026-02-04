@@ -22,9 +22,9 @@ V_2196 = Vertex(name = 'V_2196',
 
 V_2197 = Vertex(name = 'V_2197',
               particles = [ P.S, P.go, P.go ],
-              color = [ 'T(2,3,4)' ], 
-              lorentz = [ L.FFS1, L.FFS12 ],
-              couplings = {(0,0):C.GC_Sgogo, (0,1):C.GC_Sgogo})
+              color = [ 'd(2,3,4)' ], 
+              lorentz = [ L.FFS12 ],
+              couplings = {(0,0):C.GC_Sgogo})
 
 V_2198 = Vertex(name = 'V_2198',
               particles = [ P.S, P.g, P.g ],
