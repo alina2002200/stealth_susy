@@ -10,7 +10,7 @@ import lorentz as L
 
 V_S_n1n1 = Vertex(name = 'V_S_n1n1',
                  particles = [ P.S, P.n1, P.n1 ],
-                 color = [ 'Identity(2,3)' ],
+                 color = [ '1' ],
                  lorentz = [ L.FFS1, L.FFS12 ],
                  couplings = {(0,0):C.GC_Sn1n1, (0,1):C.GC_Sn1n1})
 
