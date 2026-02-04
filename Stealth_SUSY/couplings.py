@@ -7,6 +7,15 @@ from object_library import all_couplings, Coupling
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+try:
+    from object_library import Function
+except ImportError:
+    class Function:
+        def __init__(self, name, arguments, expression):
+            self.name = name
+            self.arguments = arguments
+            self.expr = expression
+
 GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       value = 'complex(0,1)*kappa/(2*MPlanck)',
                       order = {'QED': 1})
