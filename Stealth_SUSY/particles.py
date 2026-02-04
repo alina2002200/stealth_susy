@@ -38,6 +38,8 @@ S1 = Particle(pdg_code = 9900012,
               GhostNumber = 0,
               Y = 0)
 
+S1__tilde__ = S1.anti()
+
 a = Particle(pdg_code = 22,
              name = 'a',
              antiname = 'a',
