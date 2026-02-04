@@ -15,7 +15,7 @@ V_2195 = Vertex(name = 'V_2195',
               couplings = {(0,0):C.GC_S1SGrav})
 
 V_2196 = Vertex(name = 'V_2196',
-              particles = [ P.S1, P.Gravitino__tilde__, P.S__tilde__ ],
+              particles = [ P.S1, P.grv~, P.S__tilde__ ],
               color = [ '1' ],
               lorentz = [ L.RFS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
