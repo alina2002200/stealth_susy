@@ -11,6 +11,10 @@ try:
 except ImportError:
    pass
 
+SVV1 = Lorentz(name = 'SVV1',
+               spins = [ 1, 3, 3 ],
+               structure = 'P(2,1)*P(3,2) - P(2,2)*P(3,1)')
+
 
 UUS1 = Lorentz(name = 'UUS1',
                spins = [ -1, -1, 1 ],
