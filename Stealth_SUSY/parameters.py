@@ -9,6 +9,29 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+gY = Parameter(name = 'gY',
+               nature = 'external',
+               type = 'real',
+               value = 1.0,
+               texname = 'g_Y',
+               lhablock = 'GAUGE',
+               lhacode = [100])
+
+kappa = Parameter(name = 'kappa',
+                  nature = 'external',
+                  type = 'real',
+                  value = 1.0,
+                  texname = '\\kappa',
+                  lhablock = 'SMINPUTS',
+                  lhacode = [99])
+
+MPlanck = Parameter(name = 'MPlanck',
+                    nature = 'external',
+                    type = 'real',
+                    value = 2.435e18,
+                    texname = 'M_{Planck}',
+                    lhablock = 'SMINPUTS',
+                    lhacode = [98])
 
 MS = Parameter(name = 'MS',
                nature = 'external',
@@ -29,7 +52,7 @@ MS1 = Parameter(name = 'MS1',
 MY = Parameter(name = 'MY',
                nature = 'external',
                type = 'real',
-               value = 200.0,  # Например 200 ГэВ
+               value = 200.0,
                texname = 'M_Y',
                lhablock = 'MASS',
                lhacode = [9900021])
