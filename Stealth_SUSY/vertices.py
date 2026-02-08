@@ -8,11 +8,6 @@ import particles as P
 import couplings as C
 import lorentz as L
 
-V_S_n1n1 = Vertex(name = 'V_S_n1n1',
-                 particles = [ P.S, P.n1, P.n1 ],
-                 color = [ '1' ],
-                 lorentz = [ L.FFS1 ],
-                 couplings = {(0,0):C.GC_Sn1n1})
 
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.S1__tilde__, P.grv, P.S ],
@@ -25,18 +20,18 @@ V_2196 = Vertex(name = 'V_2196',
               color = [ '1' ],
               lorentz = [ L.RFS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
-
-V_2197 = Vertex(name = 'V_2197',
-              particles = [ P.S, P.go, P.go ],
-              color = [ 'd(2,3,4)' ], 
-              lorentz = [ L.FFS12 ],
-              couplings = {(0,0):C.GC_Sgogo})
-
-V_2198 = Vertex(name = 'V_2198',
-              particles = [ P.S, P.g, P.g ],
+V_SYY = Vertex(name = 'V_SYY',
+              particles = [ P.S, P.Y, P.Y ],
               color = [ 'f(2,3,4)' ],
-              lorentz = [ L.SVV1 ],
-              couplings = {(0,0):C.GC_eff_Sgg})
+              lorentz = [ L.FFS1, L.FFS12 ],
+              couplings = {(0,0):C.GC_SYY, (0,1):C.GC_SYY})
+
+V_YgY = Vertex(name = 'V_YgY',
+              particles = [ P.Y, P.g, P.Y ],
+              color = [ 'f(2,3,4)' ],
+              lorentz = [ L.FFV2, L.FFV8 ],
+              couplings = {(0,0):C.GC_YgY, (0,1):C.GC_YgY})
+
 
 V_1 = Vertex(name = 'V_1',
              particles = [ P.h01, P.h01, P.h02 ],
