@@ -23,7 +23,7 @@ V_2196 = Vertex(name = 'V_2196',
 
 V_SYY = Vertex(name = 'V_SYY',
               particles = [ P.S__tilde__, P.Y, P.Y__tilde__ ],
-              color = [ 'd(2,3,4)' ],
+              color = [ 'f(2,3,4)' ],
               lorentz = [ L.FFS1 ],
               couplings = {(0,0):C.GC_SYY})
 
