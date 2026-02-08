@@ -4,22 +4,6 @@
 
 from object_library import all_propagators, Propagator
 
-# Для скаляра S
-Propagator(particle = P.S,
-           numerator = 'complex(0,1)',
-           denominator = 'P(-1,1)*P(-1,1) - Mass(S)*Mass(S)')
-
-# Для фермиона Y (цветного!)
-Propagator(particle = P.Y,
-           numerator = 'complex(0,1)*(Gamma(-1,1,2)*P(-1,1) + Mass(Y)*Identity(1,2))',
-           denominator = 'P(-1,1)*P(-1,1) - Mass(Y)*Mass(Y)')
-
-# Для античастицы Y~
-Propagator(particle = P.Y__tilde__,
-           numerator = 'complex(0,1)*(Gamma(-1,1,2)*P(-1,1) + Mass(Y)*Identity(1,2))',
-           denominator = 'P(-1,1)*P(-1,1) - Mass(Y)*Mass(Y)')
-# define only once the denominator since this is always the same
-denominator = "P('mu', id) * P('mu', id) - Mass(id) * Mass(id) + complex(0,1) * Mass(id) * Width(id)"
 
 # propagator for the scalar
 S = Propagator(name = "S",
