@@ -20,8 +20,9 @@ V_2196 = Vertex(name = 'V_2196',
               color = [ '1' ],
               lorentz = [ L.RFS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
+
 V_SYY = Vertex(name = 'V_SYY',
-              particles = [ P.S, P.Y, P.Y ],
+              particles = [ P.S, P.Y, P.Y__tilde__ ],
               color = [ 'f(2,3,4)' ],
               lorentz = [ L.FFS1, L.FFS12 ],
               couplings = {(0,0):C.GC_SYY, (0,1):C.GC_SYY})
