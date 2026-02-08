@@ -52,7 +52,7 @@ MS1 = Parameter(name = 'MS1',
 MY = Parameter(name = 'MY',
                nature = 'external',
                type = 'real',
-               value = 200.0,
+               value = 50.0,
                texname = 'M_Y',
                lhablock = 'MASS',
                lhacode = [9900021])
