@@ -4,6 +4,8 @@
 
 from object_library import all_propagators, Propagator
 
+# define only once the denominator since this is always the same
+denominator = "P('mu', id) * P('mu', id) - Mass(id) * Mass(id) + complex(0,1) * Mass(id) * Width(id)"
 
 # propagator for the scalar
 S = Propagator(name = "S",
