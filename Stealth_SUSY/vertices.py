@@ -28,10 +28,16 @@ V_SYY = Vertex(name = 'V_SYY',
               couplings = {(0,0):C.GC_SYY, (0,1):C.GC_SYY})
 
 V_YgY = Vertex(name = 'V_YgY',
-              particles = [ P.Y, P.g, P.Y ],
+              particles = [ P.Y, P.g, P.Y__tilde__ ],  # Y, g, Y~
               color = [ 'f(2,3,4)' ],
               lorentz = [ L.FFV2, L.FFV8 ],
               couplings = {(0,0):C.GC_YgY, (0,1):C.GC_YgY})
+
+V_YgY_conj = Vertex(name = 'V_YgY_conj',
+                   particles = [ P.Y__tilde__, P.g, P.Y ],
+                   color = [ 'f(2,3,4)' ],
+                   lorentz = [ L.FFV2, L.FFV8 ],
+                   couplings = {(0,0):C.GC_YgY, (0,1):C.GC_YgY})
 
 
 V_1 = Vertex(name = 'V_1',
