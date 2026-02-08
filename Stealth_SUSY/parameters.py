@@ -26,6 +26,14 @@ MS1 = Parameter(name = 'MS1',
                 lhablock = 'MASS',
                 lhacode = [9900012]) 
 
+MY = Parameter(name = 'MY',
+               nature = 'external',
+               type = 'real',
+               value = 200.0,  # Например 200 ГэВ
+               texname = 'M_Y',
+               lhablock = 'MASS',
+               lhacode = [9900021])
+
 # This is a default parameter object representing 0.
 ZERO = Parameter(name = 'ZERO',
                  nature = 'internal',
