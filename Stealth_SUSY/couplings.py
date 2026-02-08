@@ -17,26 +17,18 @@ except ImportError:
             self.expr = expression
 
 
-GC_Sn1n1 = Coupling(name = 'GC_Sn1n1',
-                    value = 'complex(0,1)*1.0',
-                    order = {'QED': 1})
-
-
 GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       value = 'complex(0,1)*kappa/(2*MPlanck)',
                       order = {'QED': 1})
 
-GC_Sgogo = Coupling(name = 'GC_Sgogo',
-                    value = 'complex(0,1)*gS',
-                    order = {'QCD': 1})
+GC_SYY = Coupling(name = 'GC_SYY',
+                  value = 'complex(0,1)*gY',
+                  order = {'QCD': 1})
 
-GC_eff_Sgg = Coupling(name = 'GC_eff_Sgg',
-                      value = 'complex(0,1)*alpha_s/(4*pi)*gS**2/MS*F(mgo/MS)',
-                      order = {'QCD': 2})
+GC_YgY = Coupling(name = 'GC_YgY',
+                  value = 'complex(0,1)*gS',
+                  order = {'QCD': 1})
 
-F = Function(name = 'F',
-             arguments = ['x'],
-             expression = 'x*(1 + (1-x)*arcsin(1/sqrt(x))**2) if x>1 else x*(1 - (1-x)*(log((1+sqrt(1-x))/(1-sqrt(1-x)))-complex(0,1)*pi)**2/4)')
 
 GC_1 = Coupling(name = 'GC_1',
                 value = '-(ee*complex(0,1))/3.',
