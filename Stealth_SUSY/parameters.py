@@ -20,7 +20,7 @@ gS = Parameter(name = 'gS',
 gY = Parameter(name = 'gY',
                nature = 'external',
                type = 'real',
-               value = 1.0,
+               value = 0.3,
                texname = 'g_Y',
                lhablock = 'GAUGE',
                lhacode = [100])
