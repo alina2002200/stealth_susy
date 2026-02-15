@@ -3,118 +3,133 @@
 ## INFORMATION FOR MASS
 ######################################################################
 Block mass 
-    1 0.00000000e+00    # d
-    2 0.00000000e+00    # u
-    3 0.00000000e+00    # s
-    4 0.00000000e+00    # c
-    5 4.88991651e+00    # b (using MB from parameters)
-    6 1.75000000e+02    # t (using MT from parameters)
-    11 0.00000000e+00   # e-
-    12 0.00000000e+00   # ve
-    13 0.00000000e+00   # mu-
-    14 0.00000000e+00   # vm
-    15 1.77700000e+00   # tau- (using Mta from parameters)
-    16 0.00000000e+00   # vt
-    21 0.00000000e+00   # g
-    22 0.00000000e+00   # a
-    23 9.11876000e+01   # Z (using MZ from parameters)
-    24 7.98290131e+01   # W+ (using MW from parameters)
-    25 1.10899057e+02   # h01 (using MH01 from parameters)
-    35 3.99960116e+02   # h02 (using MH02 from parameters)
-    36 3.99583917e+02   # A0 (using MA0 from parameters)
-    37 4.07879012e+02   # H+ (using MH from parameters)
-    1000039 1.00000000e-13 # gld (using Mgld from parameters)
-    1000049 1.00000000e-13 # grv (using Mgrv from parameters)
-    9900011 4.50000000e+02 # MS (using MS from parameters)
-    9900012 5.00000000e+02 # MS1 (using MS1 from parameters)
-    9900021 5.00000000e+01 # MY (using MY from parameters)
-    1000022 9.66880686e+01 # n1 (using Mneu1 from parameters)
-    1000023 1.81088157e+02 # n2 (using Mneu2 from parameters)
-    1000025 -3.63756027e+02 # n3 (using Mneu3 from parameters)
-    1000035 3.81729382e+02 # n4 (using Mneu4 from parameters)
-    1000024 1.81696474e+02 # x1+ (using Mch1 from parameters)
-    1000037 3.79939320e+02 # x2+ (using Mch2 from parameters)
-    1000021 6.07713704e+02 # go (using Mgo from parameters)
-    1000011 2.02915690e+02 # sl1- (using Msl1 from parameters)
-    1000012 1.85258326e+02 # sv1 (using Msn1 from parameters)
-    1000013 2.02915690e+02 # sl2- (using Msl2 from parameters)
-    1000014 1.85258326e+02 # sv2 (using Msn2 from parameters)
-    1000015 1.34490864e+02 # sl3- (using Msl3 from parameters)
-    1000016 1.84708464e+02 # sv3 (using Msn3 from parameters)
-    2000011 1.44102799e+02 # sl4- (using Msl4 from parameters)
-    2000013 1.44102799e+02 # sl5- (using Msl5 from parameters)
-    2000015 2.06867805e+02 # sl6- (using Msl6 from parameters)
-    1000001 5.68441109e+02 # sd1 (using Msd1 from parameters)
-    1000002 5.61119014e+02 # su1 (using Msu1 from parameters)
-    1000003 5.68441109e+02 # sd2 (using Msd2 from parameters)
-    1000004 5.61119014e+02 # su2 (using Msu2 from parameters)
-    1000005 5.13065179e+02 # sd3 (using Msd3 from parameters)
-    1000006 3.99668493e+02 # su3 (using Msu3 from parameters)
-    2000001 5.45228462e+02 # sd4 (using Msd4 from parameters)
-    2000002 5.49259265e+02 # su4 (using Msu4 from parameters)
-    2000003 5.45228462e+02 # sd5 (using Msd5 from parameters)
-    2000004 5.49259265e+02 # su5 (using Msu5 from parameters)
-    2000005 5.43726676e+02 # sd6 (using Msd6 from parameters)
-    2000006 5.85785818e+02 # su6 (using Msu6 from parameters)
-    9000001 0.00000000e+00 # ghG
+    23 9.11876000e+01    # Z mass
+    24 8.04190000e+01    # W mass
+    25 1.25000000e+02    # Higgs mass
+    6 1.73000000e+02     # top mass
+    15 1.77700000e+00    # tau mass
+    5 4.70000000e+00     # bottom mass
+    9900011 4.50000000e+02 # MS 
+    9900012 5.00000000e+02 # MS1 
+    9900021 5.00000000e+01 # MY 
 
 ######################################################################
 ## INFORMATION FOR DECAY
 ######################################################################
-DECAY   1 0.00000000e+00 # d
-DECAY   2 0.00000000e+00 # u
-DECAY   3 0.00000000e+00 # s
-DECAY   4 0.00000000e+00 # c
-DECAY   5 0.00000000e+00 # b
-DECAY   6 1.56194983e+00 # t (using WT from parameters)
-DECAY   11 0.00000000e+00 # e-
-DECAY   12 0.00000000e+00 # ve
-DECAY   13 0.00000000e+00 # mu-
-DECAY   14 0.00000000e+00 # vm
-DECAY   15 0.00000000e+00 # tau-
-DECAY   16 0.00000000e+00 # vt
-DECAY   21 0.00000000e+00 # g
-DECAY   22 0.00000000e+00 # a
-DECAY   23 2.41143316e+00 # Z (using WZ from parameters)
-DECAY   24 2.00282196e+00 # W+ (using WW from parameters)
-DECAY   25 1.98610799e-03 # h01 (using WH01 from parameters)
-DECAY   35 5.74801389e-01 # h02 (using WH02 from parameters)
-DECAY   36 6.32178488e-01 # A0 (using WA0 from parameters)
-DECAY   37 5.46962813e-01 # H+ (using WH from parameters)
-DECAY   1000039 0.00000000e+00 # gld (ZERO)
-DECAY   1000049 0.00000000e+00 # grv (ZERO)
-DECAY   9900011 0.00000000e+00 # MS (ZERO)
-DECAY   9900012 0.00000000e+00 # MS1 (ZERO)
-DECAY   9900021 0.00000000e+00 # MY (ZERO)
-DECAY   1000022 0.00000000e+00 # n1 (ZERO)
-DECAY   1000023 2.07770048e-02 # n2 (using Wneu2 from parameters)
-DECAY   1000025 1.91598495e+00 # n3 (using Wneu3 from parameters)
-DECAY   1000035 2.58585079e+00 # n4 (using Wneu4 from parameters)
-DECAY   1000024 1.70414503e-02 # x1+ (using Wch1 from parameters)
-DECAY   1000037 2.48689510e+00 # x2+ (using Wch2 from parameters)
-DECAY   1000021 5.50675438e+00 # go (using Wgo from parameters)
-DECAY   1000011 2.13682161e-01 # sl1- (using Wsl1 from parameters)
-DECAY   1000012 1.49881634e-01 # sv1 (using Wsn1 from parameters)
-DECAY   1000013 2.13682161e-01 # sl2- (using Wsl2 from parameters)
-DECAY   1000014 1.49881634e-01 # sv2 (using Wsn2 from parameters)
-DECAY   1000015 1.48327268e-01 # sl3- (using Wsl3 from parameters)
-DECAY   1000016 1.47518977e-01 # sv3 (using Wsn3 from parameters)
-DECAY   2000011 2.16121626e-01 # sl4- (using Wsl4 from parameters)
-DECAY   2000013 2.16121626e-01 # sl5- (using Wsl5 from parameters)
-DECAY   2000015 2.69906096e-01 # sl6- (using Wsl6 from parameters)
-DECAY   1000001 5.31278772e+00 # sd1 (using Wsd1 from parameters)
-DECAY   1000002 5.47719539e+00 # su1 (using Wsu1 from parameters)
-DECAY   1000003 5.31278772e+00 # sd2 (using Wsd2 from parameters)
-DECAY   1000004 5.47719539e+00 # su2 (using Wsu2 from parameters)
-DECAY   1000005 3.73627601e+00 # sd3 (using Wsd3 from parameters)
-DECAY   1000006 2.02159578e+00 # su3 (using Wsu3 from parameters)
-DECAY   2000001 2.85812308e-01 # sd4 (using Wsd4 from parameters)
-DECAY   2000002 1.15297292e+00 # su4 (using Wsu4 from parameters)
-DECAY   2000003 2.85812308e-01 # sd5 (using Wsd5 from parameters)
-DECAY   2000004 1.15297292e+00 # su5 (using Wsu5 from parameters)
-DECAY   2000005 8.01566294e-01 # sd6 (using Wsd6 from parameters)
-DECAY   2000006 7.37313275e+00 # su6 (using Wsu6 from parameters)
-DECAY   9000001 0.00000000e+00 # ghG
+DECAY   23 2.49520000e+00 # Z width
+DECAY   24 2.08500000e+00 # W width
+DECAY   25 4.07000000e-03 # Higgs width
+DECAY   6 1.50000000e+00  # top width
+DECAY   15 0.00000000e+00  # tau width
+DECAY   5 0.00000000e+00   # bottom width
+DECAY   9900011 0.00000000e+00 # MS 
+DECAY   9900012 0.00000000e+00 # MS1 
+DECAY   9900021 0.00000000e+00 # MY 
+
+######################################################################
+## INFORMATION FOR SMINPUTS - ПОЛНЫЙ БЛОК ДО 100
+######################################################################
+Block sminputs 
+    1 1.27900000e+02    # aEWM1
+    2 1.16637000e-05    # Gf
+    3 1.18400000e-01    # aS
+    4 9.11876000e+01    # Z mass
+    5 4.70000000e+00    # b mass
+    6 1.73000000e+02    # t mass
+    7 1.77700000e+00    # tau mass
+    8 0.00000000e+00    # neutrino mass
+    9 8.04190000e+01    # W mass
+    10 2.26000000e-01   # sin^2(theta_W)
+    11 0.00000000e+00
+    12 0.00000000e+00
+    13 0.00000000e+00
+    14 0.00000000e+00
+    15 0.00000000e+00
+    16 0.00000000e+00
+    17 0.00000000e+00
+    18 0.00000000e+00
+    19 0.00000000e+00
+    20 0.00000000e+00
+    21 0.00000000e+00
+    22 0.00000000e+00
+    23 0.00000000e+00
+    24 0.00000000e+00
+    25 0.00000000e+00
+    26 0.00000000e+00
+    27 0.00000000e+00
+    28 0.00000000e+00
+    29 0.00000000e+00
+    30 0.00000000e+00
+    31 0.00000000e+00
+    32 0.00000000e+00
+    33 0.00000000e+00
+    34 0.00000000e+00
+    35 0.00000000e+00
+    36 0.00000000e+00
+    37 0.00000000e+00
+    38 0.00000000e+00
+    39 0.00000000e+00
+    40 0.00000000e+00
+    41 0.00000000e+00
+    42 0.00000000e+00
+    43 0.00000000e+00
+    44 0.00000000e+00
+    45 0.00000000e+00
+    46 0.00000000e+00
+    47 0.00000000e+00
+    48 0.00000000e+00
+    49 0.00000000e+00
+    50 0.00000000e+00
+    51 0.00000000e+00
+    52 0.00000000e+00
+    53 0.00000000e+00
+    54 0.00000000e+00
+    55 0.00000000e+00
+    56 0.00000000e+00
+    57 0.00000000e+00
+    58 0.00000000e+00
+    59 0.00000000e+00
+    60 0.00000000e+00
+    61 0.00000000e+00
+    62 0.00000000e+00
+    63 0.00000000e+00
+    64 0.00000000e+00
+    65 0.00000000e+00
+    66 0.00000000e+00
+    67 0.00000000e+00
+    68 0.00000000e+00
+    69 0.00000000e+00
+    70 0.00000000e+00
+    71 0.00000000e+00
+    72 0.00000000e+00
+    73 0.00000000e+00
+    74 0.00000000e+00
+    75 0.00000000e+00
+    76 0.00000000e+00
+    77 0.00000000e+00
+    78 0.00000000e+00
+    79 0.00000000e+00
+    80 0.00000000e+00
+    81 0.00000000e+00
+    82 0.00000000e+00
+    83 0.00000000e+00
+    84 0.00000000e+00
+    85 0.00000000e+00
+    86 0.00000000e+00
+    87 0.00000000e+00
+    88 0.00000000e+00
+    89 0.00000000e+00
+    90 0.00000000e+00
+    91 0.00000000e+00
+    92 0.00000000e+00
+    93 0.00000000e+00
+    94 0.00000000e+00
+    95 0.00000000e+00
+    96 0.00000000e+00
+    97 0.00000000e+00
+    98 2.43500000e+18   # MPlanck
+    99 1.00000000e+00   # kappa
+    100 0.00000000e+00
 
 ######################################################################
 ## INFORMATION FOR GAUGE
@@ -124,156 +139,28 @@ Block gauge
     101 1.00000000e+00 # gS 
 
 ######################################################################
-## INFORMATION FOR SMINPUTS
+## ВСЕ ОСТАЛЬНЫЕ БЛОКИ - ПУСТЫЕ
 ######################################################################
-Block sminputs 
-    1 1.27934000e+02    # aEWM1
-    2 1.16637000e-05    # Gf (default value)
-    3 1.18000000e-01    # aS
-    4 9.11876000e+01    # Z mass
-    5 4.88991651e+00    # b mass
-    6 1.75000000e+02    # t mass
-    7 1.77700000e+00    # tau mass
-    8 0.00000000e+00    # neutrino mass
-    9 7.98290131e+01    # W mass
-    10 2.26000000e-01   # sin^2(theta_W) (default)
-    98 2.43500000e+18   # MPlanck
-    99 1.00000000e+00   # kappa
-
-######################################################################
-## MIXING MATRICES AND SUSY PARAMETERS
-######################################################################
-
-Block dsqmix 
-    1 1 1.00000000e+00 # RRd1x1
-    2 2 1.00000000e+00 # RRd2x2
-    3 3 9.38737896e-01 # RRd3x3
-    3 6 3.44631925e-01 # RRd3x6
-    4 4 1.00000000e+00 # RRd4x4
-    5 5 1.00000000e+00 # RRd5x5
-    6 3 -3.44631925e-01 # RRd6x3
-    6 6 9.38737896e-01 # RRd6x6
-
-Block usqmix 
-    1 1 1.00000000e+00 # RRu1x1
-    2 2 1.00000000e+00 # RRu2x2
-    3 3 5.53644960e-01 # RRu3x3
-    3 6 8.32752820e-01 # RRu3x6
-    4 4 1.00000000e+00 # RRu4x4
-    5 5 1.00000000e+00 # RRu5x5
-    6 3 8.32752820e-01 # RRu6x3
-    6 6 -5.53644960e-01 # RRu6x6
-
-Block selmix 
-    1 1 1.00000000e+00 # RRl1x1
-    2 2 1.00000000e+00 # RRl2x2
-    3 3 2.82487190e-01 # RRl3x3
-    3 6 9.59271071e-01 # RRl3x6
-    4 4 1.00000000e+00 # RRl4x4
-    5 5 1.00000000e+00 # RRl5x5
-    6 3 9.59271071e-01 # RRl6x3
-    6 6 -2.82487190e-01 # RRl6x6
-
-Block snumix 
-    1 1 1.00000000e+00 # RRn1x1
-    2 2 1.00000000e+00 # RRn2x2
-    3 3 1.00000000e+00 # RRn3x3
-
-Block nmix 
-    1 1 9.86364430e-01 # RNN1x1
-    1 2 -5.31103553e-02 # RNN1x2
-    1 3 1.46433995e-01 # RNN1x3
-    1 4 -5.31186117e-02 # RNN1x4
-    2 1 9.93505358e-02 # RNN2x1
-    2 2 9.44949299e-01 # RNN2x2
-    2 3 -2.69846720e-01 # RNN2x3
-    2 4 1.56150698e-01 # RNN2x4
-    3 1 -6.03388002e-02 # RNN3x1
-    3 2 8.77004854e-02 # RNN3x2
-    3 3 6.95877493e-01 # RNN3x3
-    3 4 7.10226984e-01 # RNN3x4
-    4 1 -1.16507132e-01 # RNN4x1
-    4 2 3.10739017e-01 # RNN4x2
-    4 3 6.49225960e-01 # RNN4x3
-    4 4 -6.84377823e-01 # RNN4x4
-
-Block umix 
-    1 1 9.16834859e-01 # RUU1x1
-    1 2 -3.99266629e-01 # RUU1x2
-    2 1 3.99266629e-01 # RUU2x1
-    2 2 9.16834859e-01 # RUU2x2
-
-Block vmix 
-    1 1 9.72557835e-01 # RVV1x1
-    1 2 -2.32661249e-01 # RVV1x2
-    2 1 2.32661249e-01 # RVV2x1
-    2 2 9.72557835e-01 # RVV2x2
-
-Block vckm 
-    1 1 1.00000000e+00 # RCKM1x1
-    2 2 1.00000000e+00 # RCKM2x2
-    3 3 1.00000000e+00 # RCKM3x3
-
-Block upmns 
-    1 1 1.00000000e+00 # RMNS1x1
-    2 2 1.00000000e+00 # RMNS2x2
-    3 3 1.00000000e+00 # RMNS3x3
-
-Block yu 
-    3 3 8.92844550e-01 # Ryu3x3
-
-Block yd 
-    3 3 1.38840206e-01 # Ryd3x3
-
-Block ye 
-    3 3 1.00890810e-01 # Rye3x3
-
-Block tu 
-    3 3 -4.44752457e+02 # Rtu3x3
-
-Block td 
-    3 3 -1.10693742e+02 # Rtd3x3
-
-Block te 
-    3 3 -2.54019727e+01 # Rte3x3
-
-Block msd2 
-    1 1 2.73684674e+05 # RmD21x1
-    2 2 2.73684674e+05 # RmD22x2
-    3 3 2.70261969e+05 # RmD23x3
-
-Block msu2 
-    1 1 2.80382106e+05 # RmU21x1
-    2 2 2.80382106e+05 # RmU22x2
-    3 3 1.79137072e+05 # RmU23x3
-
-Block msq2 
-    1 1 2.99836701e+05 # RmQ21x1
-    2 2 2.99836701e+05 # RmQ22x2
-    3 3 2.48765367e+05 # RmQ23x3
-
-Block msl2 
-    1 1 3.81556700e+04 # RmL21x1
-    2 2 3.81556700e+04 # RmL22x2
-    3 3 3.78286769e+04 # RmL23x3
-
-Block mse2 
-    1 1 1.86306287e+04 # RmE21x1
-    2 2 1.86306287e+04 # RmE22x2
-    3 3 1.79676406e+04 # RmE23x3
-
-Block hmix 
-    1 3.57680977e+02 # RMUH
-    2 9.74862403e+00 # tb
-    4 1.10899057e+02 # MH01 (if needed)
-    5 3.99583917e+02 # MA0 (if needed)
-
-Block fralpha 
-    1 -1.13825210e-01 # alp
-
-Block msoft 
-    1 1.01396534e+02 # RMx1
-    2 1.91504241e+02 # RMx2
-    3 5.88263031e+02 # RMx3
-    21 3.23374943e+04 # mHd2
-    22 -1.28800134e+05 # mHu2
+Block dsqmix
+Block yu
+Block msd2
+Block msq2
+Block tu
+Block snumix
+Block fralpha
+Block umix
+Block nmix
+Block te
+Block ye
+Block msl2
+Block mse2
+Block vckm
+Block td
+Block yd
+Block usqmix
+Block msu2
+Block upmns
+Block selmix
+Block vmix
+Block hmix
+Block msoft
