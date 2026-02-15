@@ -9,10 +9,8 @@ from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
 import cmath
 
-# Константа pi^2
 pi2 = 9.869604401089358
 
-# R2 константы
 GC_Sgg_r2 = Coupling(name = 'GC_Sgg_r2',
                      value = 'complex(0,1)*(-0.5)*gY*gY/(16*{})'.format(pi2),
                      order = {'QCD': 2})
@@ -21,7 +19,6 @@ GC_SYY_r2 = Coupling(name = 'GC_SYY_r2',
                      value = 'complex(0,1)*(-3)*gY/(16*{})'.format(pi2),
                      order = {'QCD': 1})
 
-# UV константы (контрчлены)
 GC_Sgg_ct = Coupling(name = 'GC_Sgg_ct',
                      value = 'complex(0,1)*gY*gY/(16*{})'.format(pi2),
                      order = {'QCD': 2})
@@ -33,6 +30,3 @@ GC_SYY_ct = Coupling(name = 'GC_SYY_ct',
 GC_YYg_ct = Coupling(name = 'GC_YYg_ct',
                      value = 'complex(0,1)*gS/(16*{})'.format(pi2),
                      order = {'QCD': 2})
-
-# Собираем все константы
-all_couplings = [GC_Sgg_r2, GC_SYY_r2, GC_Sgg_ct, GC_SYY_ct, GC_YYg_ct]
