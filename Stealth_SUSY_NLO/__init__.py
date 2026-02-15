@@ -19,6 +19,11 @@ all_orders = coupling_orders.all_orders
 all_functions = function_library.all_functions
 all_propagators = propagators.all_propagators
 
+from .r2 import all_CTvertices as r2_vertices
+from .ct import all_CTvertices as ct_vertices
+
+# Объединяем все CT вершины
+all_CTvertices = r2_vertices + ct_vertices
 try:
    import decays
 except ImportError:
