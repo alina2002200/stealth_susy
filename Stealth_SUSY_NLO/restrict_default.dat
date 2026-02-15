@@ -144,6 +144,7 @@ Block sminputs
     8 0.00000000e+00    # neutrino mass
     9 7.98290131e+01    # W mass
     10 2.26000000e-01   # sin^2(theta_W)
+    11 1.00000000e-13   # MM32
     98 2.43500000e+18   # MPlanck
     99 1.00000000e+00   # kappa
 
@@ -300,3 +301,4 @@ Block mse2
     1 1 1.86306287e+04 # RmE21x1
     2 2 1.86306287e+04 # RmE22x2
     3 3 1.79676406e+04 # RmE23x3
+ug_loop.log
