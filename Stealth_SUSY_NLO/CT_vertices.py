@@ -49,5 +49,3 @@ V_YYg_ct = CTVertex(name = 'V_YYg_ct',
                     loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_YYg_ct})
 
-# Собираем все вершины
-all_CTvertices = [V_Sgg_r2, V_SYY_r2, V_Sgg_ct, V_SYY_ct, V_YYg_ct]
