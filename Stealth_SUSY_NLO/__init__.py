@@ -19,12 +19,6 @@ all_orders = coupling_orders.all_orders
 all_functions = function_library.all_functions
 all_propagators = propagators.all_propagators
 
-all_couplings = all_couplings + CT_couplings.all_couplings
-
-all_CTvertices = CT_vertices.all_CTvertices
-
-all_vertices = vertices.all_vertices + all_CTvertices
-
 
 try:
    import decays
