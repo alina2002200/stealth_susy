@@ -17,9 +17,9 @@ V_SYY_r2 = CTVertex(name = 'V_SYY_r2',
                     type = 'R2',
                     particles = [ P.S, P.Y, P.Y__tilde__ ],
                     color = [ 'Identity(2,3)' ],
-                    lorentz = [ L.FFS1, L.FFS12 ],
+                    lorentz = [ L.FFS1, L.FFS12, L.FFS110 ],
                     loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
-                    couplings = {(0,0,0):C.GC_SYY_r2, (1,0,0):C.GC_SYY_r2})
+                    couplings = {(0,0,0):C.GC_SYY_r2, (1,0,0):C.GC_SYY_r2}, (2,0,0):C.GC_SYY_r2})
 
 # Контрчлен для S -> gg
 V_Sgg_ct = CTVertex(name = 'V_Sgg_ct',
@@ -35,9 +35,9 @@ V_SYY_ct = CTVertex(name = 'V_SYY_ct',
                     type = 'UV',
                     particles = [ P.S, P.Y, P.Y__tilde__ ],
                     color = [ 'Identity(2,3)' ],
-                    lorentz = [ L.FFS1, L.FFS12 ],
+                    lorentz = [ L.FFS1, L.FFS12, L.FFS110 ],
                     loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
-                    couplings = {(0,0,0):C.GC_SYY_ct, (1,0,0):C.GC_SYY_ct})
+                    couplings = {(0,0,0):C.GC_SYY_ct, (1,0,0):C.GC_SYY_ct}, (2,0,0):C.GC_SYY_ct})
 
 # Контрчлен для Y -> Y g (нужен для перенормировки)
 V_YYg_ct = CTVertex(name = 'V_YYg_ct',
