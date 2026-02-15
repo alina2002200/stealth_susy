@@ -7,7 +7,7 @@ from object_library import all_couplings, Coupling
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
 GC_Sgg_ct = Coupling(name = 'GC_Sgg_ct',
-                     value = 'complex(0,1)*gY**2/(16*9.869604401089358)',
+                     value = 'complex(0,1)*gY*gY/(16*9.869604401089358)',
                      order = {'QCD': 2})
 
 GC_SYY_ct = Coupling(name = 'GC_SYY_ct',
@@ -15,7 +15,7 @@ GC_SYY_ct = Coupling(name = 'GC_SYY_ct',
                      order = {'QCD': 1})
 
 GC_Sgg_r2 = Coupling(name = 'GC_Sgg_r2',
-                     value = 'complex(0,1)*(-0.5)*gY**2/(16*9.869604401089358)',
+                     value = 'complex(0,1)*(-0.5)*gY*gY/(16*9.869604401089358)',
                      order = {'QCD': 2})
 
 GC_SYY_r2 = Coupling(name = 'GC_SYY_r2',
