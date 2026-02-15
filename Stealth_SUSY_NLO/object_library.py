@@ -375,3 +375,13 @@ class Propagator(UFOBaseClass):
 
         global all_propagators
         all_propagators.append(self)
+
+__all__ = [
+    'Particle', 'Parameter', 'CTParameter', 'Vertex', 'CTVertex',
+    'Coupling', 'Lorentz', 'Function', 'CouplingOrder', 'Decay',
+    'FormFactor', 'Propagator',
+    'all_particles', 'all_parameters', 'all_CTparameters',
+    'all_vertices', 'all_CTvertices', 'all_couplings',
+    'all_lorentz', 'all_functions', 'all_orders',
+    'all_decays', 'all_form_factors', 'all_propagators'
+]
