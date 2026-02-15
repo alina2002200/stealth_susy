@@ -1,4 +1,3 @@
-
 import particles
 import couplings
 import lorentz
@@ -10,6 +9,7 @@ import propagators
 
 import function_library
 
+
 all_particles = particles.all_particles
 all_vertices = vertices.all_vertices
 all_couplings = couplings.all_couplings
@@ -18,7 +18,6 @@ all_parameters = parameters.all_parameters
 all_orders = coupling_orders.all_orders
 all_functions = function_library.all_functions
 all_propagators = propagators.all_propagators
-
 
 try:
    import decays
@@ -45,13 +44,6 @@ else:
 gauge = [0, 1]
 
 
-__author__ = "Benjamin Fuks"
-__date__ = "01.09.13"
-__version__= "1.0.4"
-
-
-__all__ = [
-    'all_orders', 'all_parameters', 'all_particles', 
-    'all_vertices', 'all_CTvertices', 'all_couplings', 
-    'all_lorentz', 'all_propagators', 'all_functions'
-]
+__author__ = "A. Nurysheva"
+__date__ = "2026.02.15"
+__version__= "1.0"
