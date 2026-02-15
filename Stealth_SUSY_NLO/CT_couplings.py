@@ -4,29 +4,27 @@
 
 
 from object_library import all_couplings, Coupling
-
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
-
 import cmath
 
-pi2 = 9.869604401089358
+pi2 = cmath.pi**2
 
-GC_Sgg_r2 = Coupling(name = 'GC_Sgg_r2',
-                     value = 'complex(0,1)*(-0.5)*gY*gY/(16*{})'.format(pi2),
-                     order = {'QCD': 2})
+R2GC_Sgg = Coupling(name = 'R2GC_Sgg',
+                    value = 'complex(0,1)*(-0.5)*gY*gY/(16*pi2)',
+                    order = {'QCD': 2, 'QED': 0})
 
-GC_SYY_r2 = Coupling(name = 'GC_SYY_r2',
-                     value = 'complex(0,1)*(-3)*gY/(16*{})'.format(pi2),
-                     order = {'QCD': 1})
+R2GC_SYY = Coupling(name = 'R2GC_SYY',
+                    value = 'complex(0,1)*(-3)*gY/(16*pi2)',
+                    order = {'QCD': 1, 'QED': 1})
 
-GC_Sgg_ct = Coupling(name = 'GC_Sgg_ct',
-                     value = 'complex(0,1)*gY*gY/(16*{})'.format(pi2),
-                     order = {'QCD': 2})
+UVGC_Sgg = Coupling(name = 'UVGC_Sgg',
+                    value = 'complex(0,1)*gY*gY/(16*pi2)',
+                    order = {'QCD': 2, 'QED': 0})
 
-GC_SYY_ct = Coupling(name = 'GC_SYY_ct',
-                     value = 'complex(0,1)*gY/(16*{})'.format(pi2),
-                     order = {'QCD': 1})
+UVGC_SYY = Coupling(name = 'UVGC_SYY',
+                    value = 'complex(0,1)*gY/(16*pi2)',
+                    order = {'QCD': 1, 'QED': 1})
 
-GC_YYg_ct = Coupling(name = 'GC_YYg_ct',
-                     value = 'complex(0,1)*gS/(16*{})'.format(pi2),
-                     order = {'QCD': 2})
+UVGC_YYg = Coupling(name = 'UVGC_YYg',
+                    value = 'complex(0,1)*gS/(16*pi2)',
+                    order = {'QCD': 2, 'QED': 0})
