@@ -6,7 +6,7 @@ import vertices
 import coupling_orders
 import write_param_card
 import propagators
-from object_library import all_CTvertices
+
 import function_library
 
 
