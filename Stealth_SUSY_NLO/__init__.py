@@ -1,3 +1,4 @@
+
 import particles
 import couplings
 import lorentz
@@ -6,8 +7,6 @@ import vertices
 import coupling_orders
 import write_param_card
 import propagators
-
-import function_library
 
 
 all_particles = particles.all_particles
@@ -40,10 +39,11 @@ except ImportError:
 else:
    all_CTvertices = CT_vertices.all_CTvertices
 
+try:
+   import CT_parameters
+except ImportError:
+   pass
+else:
+   all_CTparameters = CT_parameters.all_CTparameters
 
-gauge = [0, 1]
 
-
-__author__ = "A. Nurysheva"
-__date__ = "2026.02.15"
-__version__= "1.0"
