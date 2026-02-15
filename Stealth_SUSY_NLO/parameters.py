@@ -9,6 +9,15 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+pi = Parameter(name = 'pi',
+               nature = 'external',
+               type = 'real',
+               value = 3.141592653589793,
+               texname = 'pi',
+               lhablock = 'GAUGE',
+               lhacode = [102])
+
+
 gS = Parameter(name = 'gS',
                nature = 'external',
                type = 'real',
