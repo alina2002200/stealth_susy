@@ -11,6 +11,10 @@ try:
 except ImportError:
    pass
 
+FF1 = Lorentz(name = 'FF1',
+              spins = [ 2, 2 ],
+              structure = 'P(-1,1)*Gamma(-1,2,1)')
+
 SVV1 = Lorentz(name = 'SVV1',
                spins = [ 1, 3, 3 ],
                structure = 'P(2,1)*P(3,2) - P(2,2)*P(3,1)')
