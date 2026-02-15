@@ -60,13 +60,3 @@ V_Sgg_UV = CTVertex(name = 'V_Sgg_UV',
                     lorentz = [ L.VVS1 ],
                     loop_particles = [ [ [P.Y] ] ],
                     couplings = {(0,0,0):C.UVGC_Sgg})
-
-# Список всех CT-вершин для экспорта
-all_CTvertices = [
-    V_Sgg_R2,
-    V_SYY_R2,
-    V_YY_UV,
-    V_SYY_UV,
-    V_YYg_UV,
-    V_Sgg_UV
-]
