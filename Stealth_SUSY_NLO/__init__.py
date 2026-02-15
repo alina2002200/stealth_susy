@@ -41,6 +41,12 @@ else:
    all_CTvertices = CT_vertices.all_CTvertices
 
 
+__has_loop_hybrid__ = True
+__has_loop_orig__ = True
+__has_loop_ufo__ = True
+__loop_model__ = True
+__nlo_model__ = True
+
 gauge = [0, 1]
 
 
