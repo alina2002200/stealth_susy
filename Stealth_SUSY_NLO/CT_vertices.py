@@ -2,7 +2,7 @@
 # Mathematica version: 9.0 for Mac OS X x86 (64-bit) (January 24, 2013)
 # Date: Mon 7 Oct 2013 12:36:37
 
-from object_library import all_CTvertices, CTVertex
+from object_library import all_vertices, all_CTvertices, Vertex, CTVertex
 import particles as P
 import CT_couplings as C
 import lorentz as L
