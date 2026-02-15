@@ -27,3 +27,30 @@ Block gauge
 Block sminputs 
     98 2.43500000e+18 # MPlanck 
     99 1.00000000e+00 # kappa 
+
+######################################################################
+## EMPTY BLOCKS (required by MadGraph)
+######################################################################
+Block msu2
+Block msq2
+Block umix
+Block msl2
+Block usqmix
+Block yu
+Block nmix
+Block upmns
+Block yd
+Block td
+Block mse2
+Block selmix
+Block tu
+Block vckm
+Block dsqmix
+Block te
+Block msd2
+Block vmix
+Block fralpha
+Block msoft
+Block snumix
+Block hmix
+Block ye
