@@ -1,51 +1,52 @@
+
 from object_library import all_CTvertices, CTVertex
 import particles as P
 import CT_couplings as C
 import lorentz as L
 
-# Вершина для S -> gg (R2 член)
+# Вершина для S~ -> gg (R2 член) - треугольная петля с Y
 V_Sgg_r2 = CTVertex(name = 'V_Sgg_r2',
                     type = 'R2',
-                    particles = [ P.g, P.g, P.S ],
+                    particles = [ P.g, P.g, P.S__tilde__ ],  # S~ с тильдой!
                     color = [ 'Identity(1,2)' ],
                     lorentz = [ L.VVS1 ],
-                    loop_particles = [[P.Y]],  # Y и Y~ в одном списке
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],  # Y и Y~ в петле
                     couplings = {(0,0,0):C.GC_Sgg_r2})
 
-# Вершина для S -> Y Y~ (R2 член)
+# Вершина для S~ -> Y Y~ (R2 член)
 V_SYY_r2 = CTVertex(name = 'V_SYY_r2',
                     type = 'R2',
-                    particles = [ P.S, P.Y, P.Y],
+                    particles = [ P.S__tilde__, P.Y, P.Y__tilde__ ],  # S~ с тильдой!
                     color = [ 'Identity(2,3)' ],
                     lorentz = [ L.FFS1, L.FFS12],
-                    loop_particles = [[P.Y] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_SYY_r2, (1,0,0):C.GC_SYY_r2})
 
-# Контрчлен для S -> gg
+# Контрчлен для S~ -> gg (UV)
 V_Sgg_ct = CTVertex(name = 'V_Sgg_ct',
                     type = 'UV',
-                    particles = [ P.g, P.g, P.S ],
+                    particles = [ P.g, P.g, P.S__tilde__ ],  # S~ с тильдой!
                     color = [ 'Identity(1,2)' ],
                     lorentz = [ L.VVS1 ],
-                    loop_particles = [[P.Y]],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_Sgg_ct})
 
-# Контрчлен для S -> Y Y~
+# Контрчлен для S~ -> Y Y~ (UV)
 V_SYY_ct = CTVertex(name = 'V_SYY_ct',
                     type = 'UV',
-                    particles = [ P.S, P.Y, P.Y],
+                    particles = [ P.S__tilde__, P.Y, P.Y__tilde__ ],  # S~ с тильдой!
                     color = [ 'Identity(2,3)' ],
                     lorentz = [ L.FFS1, L.FFS12],
-                    loop_particles = [[P.Y]],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_SYY_ct, (1,0,0):C.GC_SYY_ct})
 
-# Контрчлен для Y -> Y g (нужен для перенормировки)
+# Контрчлен для Y -> Y g (UV) - уже правильно
 V_YYg_ct = CTVertex(name = 'V_YYg_ct',
                     type = 'UV',
-                    particles = [ P.Y, P.Y, P.g ],
+                    particles = [ P.Y, P.Y__tilde__, P.g ],
                     color = [ 'T(1,2,3)' ],
                     lorentz = [ L.FFV1 ],
-                    loop_particles = [[P.Y] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_YYg_ct})
 
 # Собираем все вершины
