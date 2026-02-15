@@ -4,6 +4,11 @@
 ######################################################################
 Block mass 
     23 9.11876000e+01    # Z mass
+    24 8.04190000e+01    # W mass
+    25 1.25000000e+02    # Higgs mass
+    6 1.73000000e+02     # top mass
+    15 1.77700000e+00    # tau mass
+    5 4.70000000e+00     # bottom mass
     9900011 4.50000000e+02 # MS 
     9900012 5.00000000e+02 # MS1 
     9900021 5.00000000e+01 # MY 
@@ -12,6 +17,11 @@ Block mass
 ## INFORMATION FOR DECAY
 ######################################################################
 DECAY   23 2.49520000e+00 # Z width
+DECAY   24 2.08500000e+00 # W width
+DECAY   25 4.07000000e-03 # Higgs width
+DECAY   6 1.50000000e+00  # top width
+DECAY   15 0.00000000e+00  # tau width
+DECAY   5 0.00000000e+00   # bottom width
 DECAY   9900011 0.00000000e+00 # MS 
 DECAY   9900012 0.00000000e+00 # MS1 
 DECAY   9900021 0.00000000e+00 # MY 
@@ -27,8 +37,11 @@ Block gauge
 ## INFORMATION FOR SMINPUTS
 ######################################################################
 Block sminputs 
-    98 2.43500000e+18 # MPlanck 
-    99 1.00000000e+00 # kappa 
+    1 1.27900000e+02    # aEWM1 (inverse alpha_EM)
+    2 1.16637000e-05    # Gf (Fermi constant)
+    3 1.18400000e-01    # aS (alpha_S)
+    98 2.43500000e+18   # MPlanck 
+    99 1.00000000e+00   # kappa 
 
 ######################################################################
 ## EMPTY BLOCKS (required by MadGraph)
