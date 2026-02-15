@@ -7,8 +7,8 @@ import vertices
 import coupling_orders
 import write_param_card
 import propagators
-import r2
-import ct
+import CT_couplings
+import CT_vertices
 
 all_particles = particles.all_particles
 all_vertices = vertices.all_vertices
@@ -19,9 +19,11 @@ all_orders = coupling_orders.all_orders
 all_functions = function_library.all_functions
 all_propagators = propagators.all_propagators
 
+all_couplings = all_couplings + CT_couplings.all_couplings
 
-all_vertices = vertices.all_vertices + r2.all_CTvertices + ct.all_CTvertices
-all_CTvertices = r2.all_CTvertices + ct.all_CTvertices
+all_CTvertices = CT_vertices.all_CTvertices
+
+all_vertices = vertices.all_vertices + all_CTvertices
 
 
 try:
@@ -52,3 +54,10 @@ gauge = [0, 1]
 __author__ = "Benjamin Fuks"
 __date__ = "01.09.13"
 __version__= "1.0.4"
+
+
+__all__ = [
+    'all_orders', 'all_parameters', 'all_particles', 
+    'all_vertices', 'all_CTvertices', 'all_couplings', 
+    'all_lorentz', 'all_propagators', 'all_functions'
+]
