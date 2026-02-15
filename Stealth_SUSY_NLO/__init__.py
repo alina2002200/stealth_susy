@@ -7,8 +7,6 @@ import vertices
 import coupling_orders
 import write_param_card
 import propagators
-import CT_couplings
-import CT_vertices
 
 all_particles = particles.all_particles
 all_vertices = vertices.all_vertices
