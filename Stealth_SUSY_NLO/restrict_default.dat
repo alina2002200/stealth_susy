@@ -1,1 +1,18 @@
+# Restriction card for NLO calculations
+Block mass
+    9900011 450.0  # MS
+    9900012 500.0  # MS1  
+    9900021 50.0   # MY
 
+Block decay
+    9900011 0.0    # MS
+    9900012 0.0    # MS1
+    9900021 0.0    # MY
+
+Block gauge
+    101 1.0        # gS
+    100 0.3        # gY
+
+Block sminputs
+    98 2.435e18    # MPlanck
+    99 1.0         # kappa
