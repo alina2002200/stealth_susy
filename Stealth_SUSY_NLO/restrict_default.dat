@@ -200,6 +200,7 @@ Block vckm
 Block td
 Block yd
 Block usqmix
+Block dsqmix
 Block msu2
 Block upmns
 Block selmix
