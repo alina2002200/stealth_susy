@@ -9,7 +9,7 @@ V_Sgg_r2 = CTVertex(name = 'V_Sgg_r2',
                     particles = [ P.g, P.g, P.S ],
                     color = [ 'Identity(1,2)' ],
                     lorentz = [ L.VVS1 ],
-                    loop_particles = [ [ [P.Y] ] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_Sgg_r2})  # <-- ИСПРАВЛЕНО: три индекса
 
 # Вершина для S -> Y Y~ (R2 член)
@@ -18,7 +18,7 @@ V_SYY_r2 = CTVertex(name = 'V_SYY_r2',
                     particles = [ P.S, P.Y, P.Y__tilde__ ],
                     color = [ 'Identity(2,3)' ],
                     lorentz = [ L.FFS1, L.FFS12 ],
-                    loop_particles = [ [ [P.Y] ] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_SYY_r2, (1,0,0):C.GC_SYY_r2}) # <-- ИСПРАВЛЕНО
 
 # Контрчлен для S -> gg
@@ -27,7 +27,7 @@ V_Sgg_ct = CTVertex(name = 'V_Sgg_ct',
                     particles = [ P.g, P.g, P.S ],
                     color = [ 'Identity(1,2)' ],
                     lorentz = [ L.VVS1 ],
-                    loop_particles = [ [ [P.Y] ] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_Sgg_ct}) # <-- ИСПРАВЛЕНО
 
 # Контрчлен для S -> Y Y~
@@ -36,7 +36,7 @@ V_SYY_ct = CTVertex(name = 'V_SYY_ct',
                     particles = [ P.S, P.Y, P.Y__tilde__ ],
                     color = [ 'Identity(2,3)' ],
                     lorentz = [ L.FFS1, L.FFS12 ],
-                    loop_particles = [ [ [P.Y] ] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_SYY_ct, (1,0,0):C.GC_SYY_ct}) # <-- ИСПРАВЛЕНО
 
 # Контрчлен для Y -> Y g (нужен для перенормировки)
@@ -45,7 +45,7 @@ V_YYg_ct = CTVertex(name = 'V_YYg_ct',
                     particles = [ P.Y, P.Y__tilde__, P.g ],
                     color = [ 'T(1,2,3)' ],
                     lorentz = [ L.FFV1 ],
-                    loop_particles = [ [ [P.Y] ] ],
+                    loop_particles = [ [ [P.Y], [P.Y__tilde__] ] ],
                     couplings = {(0,0,0):C.GC_YYg_ct}) # <-- ИСПРАВЛЕНО
 
 # Собираем все вершины
