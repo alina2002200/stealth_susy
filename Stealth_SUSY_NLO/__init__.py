@@ -18,6 +18,9 @@ all_orders = coupling_orders.all_orders
 all_functions = function_library.all_functions
 all_propagators = propagators.all_propagators
 
+from .r2 import all_vertices_r2
+from .ct import all_vertices_ct
+
 try:
    import decays
 except ImportError:
