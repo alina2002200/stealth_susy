@@ -829,3 +829,10 @@ vu = Parameter(name='vu',
     value = 'v*cmath.sin(betaH)',
     texname = 'v_u')
 
+MAh1 = Parameter(name = 'MAh1',
+    nature = 'external',
+    type = 'real',
+    value = 0.0,
+    texname = 'M_{{A^0}_1}',
+    lhablock = 'MASS',
+    lhacode = [0])
