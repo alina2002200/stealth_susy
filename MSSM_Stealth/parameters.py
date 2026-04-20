@@ -829,12 +829,36 @@ vu = Parameter(name='vu',
     value = 'v*cmath.sin(betaH)',
     texname = 'v_u')
 
-# Goldstone parameters (zero mass)
+# Ghost and Goldstone parameters (needed for MadGraph)
+MgZ = Parameter(name = 'MgZ',
+    nature = 'external',
+    type = 'real',
+    value = 91.1876,
+    texname = 'M_{gZ}',
+    lhablock = 'MASS',
+    lhacode = [0])
+
+MgWm = Parameter(name = 'MgWm',
+    nature = 'external',
+    type = 'real',
+    value = 80.385,
+    texname = 'M_{gWm}',
+    lhablock = 'MASS',
+    lhacode = [0])
+
+MgWpC = Parameter(name = 'MgWpC',
+    nature = 'external',
+    type = 'real',
+    value = 80.385,
+    texname = 'M_{gWpC}',
+    lhablock = 'MASS',
+    lhacode = [0])
+
 MAh1 = Parameter(name = 'MAh1',
     nature = 'external',
     type = 'real',
     value = 0.0,
-    texname = 'M_{{A^0}_1}',
+    texname = 'M_{A^0_1}',
     lhablock = 'MASS',
     lhacode = [0])
 
@@ -842,7 +866,7 @@ WAh1 = Parameter(name = 'WAh1',
     nature = 'external',
     type = 'real',
     value = 0.0,
-    texname = '\\Gamma_{{A^0}_1}',
+    texname = '\\Gamma_{A^0_1}',
     lhablock = 'DECAY',
     lhacode = [0])
 
@@ -850,7 +874,7 @@ MHm1 = Parameter(name = 'MHm1',
     nature = 'external',
     type = 'real',
     value = 0.0,
-    texname = 'M_{{H^-}_1}',
+    texname = 'M_{H^-_1}',
     lhablock = 'MASS',
     lhacode = [0])
 
@@ -858,6 +882,22 @@ WHm1 = Parameter(name = 'WHm1',
     nature = 'external',
     type = 'real',
     value = 0.0,
-    texname = '\\Gamma_{{H^-}_1}',
+    texname = '\\Gamma_{H^-_1}',
     lhablock = 'DECAY',
     lhacode = [0])
+
+WZ = Parameter(name = 'WZ',
+    nature = 'external',
+    type = 'real',
+    value = 2.4952,
+    texname = '\\Gamma_{Z}',
+    lhablock = 'DECAY',
+    lhacode = [23])
+
+WWm = Parameter(name = 'WWm',
+    nature = 'external',
+    type = 'real',
+    value = 2.141,
+    texname = '\\Gamma_{W^-}',
+    lhablock = 'DECAY',
+    lhacode = [24])
