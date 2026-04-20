@@ -829,10 +829,35 @@ vu = Parameter(name='vu',
     value = 'v*cmath.sin(betaH)',
     texname = 'v_u')
 
+# Goldstone parameters (zero mass)
 MAh1 = Parameter(name = 'MAh1',
     nature = 'external',
     type = 'real',
     value = 0.0,
     texname = 'M_{{A^0}_1}',
     lhablock = 'MASS',
+    lhacode = [0])
+
+WAh1 = Parameter(name = 'WAh1',
+    nature = 'external',
+    type = 'real',
+    value = 0.0,
+    texname = '\\Gamma_{{A^0}_1}',
+    lhablock = 'DECAY',
+    lhacode = [0])
+
+MHm1 = Parameter(name = 'MHm1',
+    nature = 'external',
+    type = 'real',
+    value = 0.0,
+    texname = 'M_{{H^-}_1}',
+    lhablock = 'MASS',
+    lhacode = [0])
+
+WHm1 = Parameter(name = 'WHm1',
+    nature = 'external',
+    type = 'real',
+    value = 0.0,
+    texname = '\\Gamma_{{H^-}_1}',
+    lhablock = 'DECAY',
     lhacode = [0])
