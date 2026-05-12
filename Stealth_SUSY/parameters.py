@@ -9,14 +9,6 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
-gS = Parameter(name = 'gS',
-               nature = 'external',
-               type = 'real',
-               value = 1.0,
-               texname = 'g_S',
-               lhablock = 'GAUGE',
-               lhacode = [101])
-
 ccc = Parameter(name = 'ccc',
                nature = 'external',
                type = 'real',
