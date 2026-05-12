@@ -17,11 +17,11 @@ gS = Parameter(name = 'gS',
                lhablock = 'GAUGE',
                lhacode = [101])
 
-gY = Parameter(name = 'gY',
+ccc = Parameter(name = 'ccc',
                nature = 'external',
                type = 'real',
                value = 0.3,
-               texname = 'g_Y',
+               texname = 'ccc',
                lhablock = 'GAUGE',
                lhacode = [100])
 
