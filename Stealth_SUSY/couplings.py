@@ -21,12 +21,8 @@ GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       value = 'complex(0,1)*kappa/(2*MPlanck)',
                       order = {'QED': 1})
 
-GC_SYY = Coupling(name = 'GC_SYY',
-                  value = 'complex(0,1)*gY',
-                  order = {'QCD': 1})
-
-GC_YgY = Coupling(name = 'GC_YgY',
-                  value = 'complex(0,1)*gS',
+GC_Sgg = Coupling(name = 'GC_SYY',
+                  value = 'complex(0,1)*ccc',
                   order = {'QCD': 1})
 
 
