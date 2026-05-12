@@ -21,17 +21,11 @@ V_2196 = Vertex(name = 'V_2196',
               lorentz = [ L.RFS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
 
-V_SYY = Vertex(name = 'V_SYY',
-              particles = [ P.S, P.Y, P.Y__tilde__ ],
+V_Sgg = Vertex(name = 'V_SYY',
+              particles = [ P.S, P.g, P.g ],
               color = [ 'Identity(2,3)' ],
               lorentz = [ L.FFS1, L.FFS12 ],
-              couplings = {(0,0):C.GC_SYY, (0,1):C.GC_SYY})
-
-V_YYg = Vertex(name = 'V_YYg',
-              particles = [ P.Y, P.Y__tilde__, P.g ],
-              color = [ 'T(1,2,3)' ],
-              lorentz = [ L.FFV1 ],
-              couplings = {(0,0):C.GC_YgY})
+              couplings = {(0,0):C.GC_Sgg, (0,1):C.GC_Sgg})
 
 
 V_1 = Vertex(name = 'V_1',
