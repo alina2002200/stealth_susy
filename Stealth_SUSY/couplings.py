@@ -22,7 +22,7 @@ GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       order = {'QED': 1})
 
 GC_Sgg = Coupling(name = 'GC_Sgg',
-                  value = 'complex(0,1)*ccc',
+                  value = 'complex(0,1)*c_Sgg',
                   order = {'QCD': 1})
 
 
