@@ -8,6 +8,70 @@ import particles as P
 import couplings as C
 import lorentz as L
 
+# Самые вероятные работающие варианты:
+coup = {(0,0):C.GC_S1SGrav}
+
+# Вариант A: RFS1 с порядком grv-S1-S
+V_A = Vertex(name = 'V_A',
+              particles = [ P.grv, P.S1, P.S ],
+              color = ['1'],
+              lorentz = [L.RFS1],
+              couplings = coup)
+
+# Вариант B: RFS1 с порядком S1-grv-S
+V_B = Vertex(name = 'V_B',
+              particles = [ P.S1, P.grv, P.S ],
+              color = ['1'],
+              lorentz = [L.RFS1],
+              couplings = coup)
+
+# Вариант C: FRS1 с порядком S1-grv-S (рекомендуемый)
+V_C = Vertex(name = 'V_C',
+              particles = [ P.S1, P.grv, P.S ],
+              color = ['1'],
+              lorentz = [L.FRS1],
+              couplings = coup)
+
+# Вариант D: FRS1 с порядком grv-S1-S
+V_D = Vertex(name = 'V_D',
+              particles = [ P.grv, P.S1, P.S ],
+              color = ['1'],
+              lorentz = [L.FRS1],
+              couplings = coup)
+
+# Вариант E: RFS3 с порядком S1-grv-S
+V_E = Vertex(name = 'V_E',
+              particles = [ P.S1, P.grv, P.S ],
+              color = ['1'],
+              lorentz = [L.RFS3],
+              couplings = coup)
+
+# Анти-частицы для всех вариантов
+V_A_anti = Vertex(name = 'V_A_anti',
+              particles = [ P.grv, P.S1__tilde__, P.S__tilde__ ],
+              color = ['1'],
+              lorentz = [L.RFS1],
+              couplings = coup)
+
+V_B_anti = Vertex(name = 'V_B_anti',
+              particles = [ P.S1__tilde__, P.grv, P.S__tilde__ ],
+              color = ['1'],
+              lorentz = [L.RFS1],
+              couplings = coup)
+
+V_C_anti = Vertex(name = 'V_C_anti',
+              particles = [ P.S1__tilde__, P.grv, P.S__tilde__ ],
+              color = ['1'],
+              lorentz = [L.FRS1],
+              couplings = coup)
+
+V_D_anti = Vertex(name = 'V_D_anti',
+              particles = [ P.grv, P.S1__tilde__, P.S__tilde__ ],
+              color = ['1'],
+              lorentz = [L.FRS1],
+              couplings = coup)
+
+
 
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.grv, P.S1, P.S ],
