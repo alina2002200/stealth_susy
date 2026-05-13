@@ -9,11 +9,11 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
-ccc = Parameter(name = 'ccc',
+c_Sgg = Parameter(name = 'c_Sgg',
                nature = 'external',
                type = 'real',
                value = 0.3,
-               texname = 'ccc',
+               texname = 'c_Sgg',
                lhablock = 'GAUGE',
                lhacode = [100])
 
