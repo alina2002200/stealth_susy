@@ -9,6 +9,34 @@ import couplings as C
 import lorentz as L
 
 
+# ВАРИАНТ A: FRS1 (фермион-гравитино-скаляр) - наиболее физичный
+V_A = Vertex(name = 'V_A',
+    particles = [ P.S1, P.grv, P.S ],
+    color = ['1'],
+    lorentz = [ L.FRS1 ],
+    couplings = {(0,0):C.GC_S1SGrav})
+
+# ВАРИАНТ B: RFS3 (альтернативная проекция)
+V_B = Vertex(name = 'V_B',
+    particles = [ P.S1, P.grv, P.S ],
+    color = ['1'],
+    lorentz = [ L.RFS3 ],
+    couplings = {(0,0):C.GC_S1SGrav})
+
+# ВАРИАНТ C: RFS1 (как в оригинале, но с правильным порядком)
+V_C = Vertex(name = 'V_C',
+    particles = [ P.grv, P.S1, P.S ],
+    color = ['1'],
+    lorentz = [ L.RFS1 ],
+    couplings = {(0,0):C.GC_S1SGrav})
+
+# ВАРИАНТ D: FRS1 с порядком grv-S1-S
+V_D = Vertex(name = 'V_D',
+    particles = [ P.grv, P.S1, P.S ],
+    color = ['1'],
+    lorentz = [ L.FRS1 ],
+    couplings = {(0,0):C.GC_S1SGrav})
+
 # Вариант с FRS1 (фермион-гравитино-скаляр)
 V_S1_grv_S = Vertex(name = 'V_S1_grv_S',
               particles = [ P.S1, P.grv, P.S ],
