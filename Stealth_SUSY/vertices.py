@@ -8,6 +8,20 @@ import particles as P
 import couplings as C
 import lorentz as L
 
+
+# Вариант с FRS1 (фермион-гравитино-скаляр)
+V_S1_grv_S = Vertex(name = 'V_S1_grv_S',
+              particles = [ P.S1, P.grv, P.S ],
+              color = [ '1' ],
+              lorentz = [ L.FRS1 ],  # вместо RFS1
+              couplings = {(0,0):C.GC_S1SGrav})
+
+# Вариант с RFS1 другим порядком
+V_S1_grv_S2 = Vertex(name = 'V_S1_grv_S2',
+              particles = [ P.grv, P.S1, P.S ],
+              color = [ '1' ],
+              lorentz = [ L.RFS1 ],
+              couplings = {(0,0):C.GC_S1SGrav})
 # Самые вероятные работающие варианты:
 coup = {(0,0):C.GC_S1SGrav}
 
