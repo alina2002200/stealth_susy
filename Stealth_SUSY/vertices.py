@@ -10,7 +10,7 @@ import lorentz as L
 
 
 V_2195 = Vertex(name = 'V_2195',
-              particles = [ P.S1, P.grv, P.S ],
+              particles = [ P.grv, P.S1, P.S ],
               color = [ '1' ],
               lorentz = [ L.RFS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
