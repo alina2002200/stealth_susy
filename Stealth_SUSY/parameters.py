@@ -36,7 +36,7 @@ MPlanck = Parameter(name = 'MPlanck',
 MS = Parameter(name = 'MS',
                nature = 'external',
                type = 'real',
-               value = 450.0,
+               value = 200.0,
                texname = 'M_S',
                lhablock = 'MASS',
                lhacode = [9900011])
@@ -44,18 +44,12 @@ MS = Parameter(name = 'MS',
 MS1 = Parameter(name = 'MS1',
                 nature = 'external',
                 type = 'real',
-                value = 500.0, 
+                value = 205.0, 
                 texname = 'M_{\\tilde{S}_1}',
                 lhablock = 'MASS',
                 lhacode = [9900012]) 
 
-MY = Parameter(name = 'MY',
-               nature = 'external',
-               type = 'real',
-               value = 50.0,
-               texname = 'M_Y',
-               lhablock = 'MASS',
-               lhacode = [9900021])
+
 
 # This is a default parameter object representing 0.
 ZERO = Parameter(name = 'ZERO',
