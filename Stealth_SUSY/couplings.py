@@ -18,7 +18,7 @@ except ImportError:
 
 
 GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
-                      value = 'complex(0,1)*kappa/(2*MPlanck)',
+                      value = 'complex(0,1)*c_S1SGrav',
                       order = {'QED': 1})
 
 GC_Sgg = Coupling(name = 'GC_Sgg',
