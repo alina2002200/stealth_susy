@@ -12,26 +12,19 @@ from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 c_Sgg = Parameter(name = 'c_Sgg',
                nature = 'external',
                type = 'real',
-               value = 0.3,
+               value = 1.0,
                texname = 'c_Sgg',
                lhablock = 'GAUGE',
                lhacode = [100])
 
-kappa = Parameter(name = 'kappa',
+c_S1SGrav = Parameter(name = 'c_S1SGrav',
                   nature = 'external',
                   type = 'real',
                   value = 1.0,
-                  texname = '\\kappa',
+                  texname = '\\c_S1SGrav',
                   lhablock = 'SMINPUTS',
                   lhacode = [99])
 
-MPlanck = Parameter(name = 'MPlanck',
-                    nature = 'external',
-                    type = 'real',
-                    value = 2.435e18,
-                    texname = 'M_{Planck}',
-                    lhablock = 'SMINPUTS',
-                    lhacode = [98])
 
 MS = Parameter(name = 'MS',
                nature = 'external',
