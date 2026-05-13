@@ -22,7 +22,7 @@ c_S1SGrav = Parameter(name = 'c_S1SGrav',
                   type = 'real',
                   value = 1.0,
                   texname = '\\c_S1SGrav',
-                  lhablock = 'SMINPUTS',
+                  lhablock = 'GAUGE',
                   lhacode = [99])
 
 
