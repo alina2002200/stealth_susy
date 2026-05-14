@@ -9,6 +9,12 @@ import couplings as C
 import lorentz as L
 
 
+V_n1_a_S1 = Vertex(name = 'V_n1_a_S1',
+                  particles = [ P.n1, P.a, P.S1 ],
+                  color = [ '1' ],
+                  lorentz = [ L.FFV1 ],  # Gamma(3,2,1)
+                  couplings = {(0,0): C.GC_n1_a_S1})
+
 
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.S1, P.grv, P.S ],
