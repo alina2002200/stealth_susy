@@ -17,6 +17,10 @@ except ImportError:
             self.expr = expression
 
 
+GC_n1_a_S1 = Coupling(name = 'GC_n1_a_S1',
+                      value = 'complex(0,1)*c_n1_a_S1',
+                      order = {'QED': 1})
+
 GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       value = 'complex(0,1)*c_S1SGrav',
                       order = {'QED': 1})
