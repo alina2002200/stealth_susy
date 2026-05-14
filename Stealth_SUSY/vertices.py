@@ -9,27 +9,11 @@ import couplings as C
 import lorentz as L
 
 
-# Вариант 1: FFV1
 V1 = Vertex(name = 'V_n1_a_S1',
     particles = [ P.n1, P.a, P.S1 ],
     color = ['1'],
     lorentz = [ L.FFV1 ],
     couplings = {(0,0): C.GC_n1_a_S1})
-
-# Вариант 2: FFV2
-V2 = Vertex(name = 'V_n1_a_S1_v2',
-    particles = [ P.n1, P.a, P.S1 ],
-    color = ['1'],
-    lorentz = [ L.FFV2 ],
-    couplings = {(0,0): C.GC_n1_a_S1})
-
-# Вариант 3: FFV8
-V3 = Vertex(name = 'V_n1_a_S1_v3',
-    particles = [ P.n1, P.a, P.S1 ],
-    color = ['1'],
-    lorentz = [ L.FFV8 ],
-    couplings = {(0,0): C.GC_n1_a_S1})
-
 
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.S1, P.grv, P.S ],
