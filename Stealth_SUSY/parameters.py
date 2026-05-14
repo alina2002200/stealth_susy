@@ -9,6 +9,14 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+c_n1_a_S1 = Parameter(name = 'c_n1_a_S1',
+                      nature = 'external',
+                      type = 'real',
+                      value = 1.0,
+                      texname = 'c_n1_a_S1',
+                      lhablock = 'GAUGE',
+                      lhacode = [101])
+
 c_Sgg = Parameter(name = 'c_Sgg',
                nature = 'external',
                type = 'real',
@@ -21,7 +29,7 @@ c_S1SGrav = Parameter(name = 'c_S1SGrav',
                   nature = 'external',
                   type = 'real',
                   value = 1.0,
-                  texname = '\\c_S1SGrav',
+                  texname = 'c_S1SGrav',
                   lhablock = 'GAUGE',
                   lhacode = [99])
 
