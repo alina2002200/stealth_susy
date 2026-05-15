@@ -34,7 +34,9 @@ S1 = Particle(pdg_code = 9900012,
               width = Param.ZERO,
               texname = '\\tilde{S}_1',
               antitexname = '\\tilde{S}_1',
-              charge = 0)
+              charge = 0,
+              GhostNumber  = 0,
+              Y = 0)
 
 S1__tilde__ = S1.anti()
 
