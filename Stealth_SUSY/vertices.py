@@ -30,14 +30,14 @@ V_2196 = Vertex(name = 'V_2196',
 V_Sgg = Vertex(name = 'V_Sgg',
               particles = [ P.S, P.g, P.g ],
               color = [ 'Identity(2,3)' ],
-              lorentz = [ L.FFS1, L.FFS12 ],
-              couplings = {(0,0):C.GC_Sgg, (0,1):C.GC_Sgg})
+              lorentz = [ L.SVV1 ],
+              couplings = {(0,0): C.GC_Sgg})
 
 V_Sgg1 = Vertex(name = 'V_Sgg1',
               particles = [ P.S__tilde__, P.g, P.g ],
               color = [ 'Identity(2,3)' ],
-              lorentz = [ L.FFS1, L.FFS12 ],
-              couplings = {(0,0):C.GC_Sgg, (0,1):C.GC_Sgg})
+              lorentz = [ L.SVV1 ],
+              couplings = {(0,0):C.GC_Sgg})
 
 
 V_1 = Vertex(name = 'V_1',
