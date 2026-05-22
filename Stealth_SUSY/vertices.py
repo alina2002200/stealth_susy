@@ -18,13 +18,13 @@ V1 = Vertex(name = 'V_n1_a_S1',
 V_2195 = Vertex(name = 'V_2195',
               particles = [ P.S1, P.grv, P.S ],
               color = [ '1' ],
-              lorentz = [ L.RFS1 ],
+              lorentz = [ L.FRS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
 
 V_2196 = Vertex(name = 'V_2196',
               particles = [ P.S1__tilde__, P.grv, P.S__tilde__ ],
               color = [ '1' ],
-              lorentz = [ L.RFS1 ],
+              lorentz = [ L.FRS1 ],
               couplings = {(0,0):C.GC_S1SGrav})
 
 V_Sgg = Vertex(name = 'V_Sgg',
