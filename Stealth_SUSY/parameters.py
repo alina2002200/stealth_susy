@@ -51,6 +51,21 @@ MS1 = Parameter(name = 'MS1',
                 lhacode = [9900012]) 
 
 
+WS = Parameter(name = 'WS',
+                 nature = 'external',
+                 type = 'real',
+                 value = 1.0,
+                 texname = '\\text{WS}',
+                 lhablock = 'DECAY',
+                 lhacode = [ 1 ])
+
+WS1 = Parameter(name = 'WS1',
+                 nature = 'external',
+                 type = 'real',
+                 value = 1.0,
+                 texname = '\\text{WS1}',
+                 lhablock = 'DECAY',
+                 lhacode = [ 2 ])
 
 # This is a default parameter object representing 0.
 ZERO = Parameter(name = 'ZERO',
