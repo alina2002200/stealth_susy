@@ -36,7 +36,7 @@ V_Sgg = Vertex(name = 'V_Sgg',
 V_Sgg1 = Vertex(name = 'V_Sgg1',
               particles = [ P.S__tilde__, P.g, P.g ],
               color = [ 'Identity(2,3)' ],
-              lorentz = [ L.SVV1 ],
+              lorentz = [ L.SVV_effective ],
               couplings = {(0,0):C.GC_Sgg})
 
 
