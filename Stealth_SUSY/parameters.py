@@ -54,7 +54,7 @@ MS1 = Parameter(name = 'MS1',
 WS = Parameter(name = 'WS',
                  nature = 'external',
                  type = 'real',
-                 value = 5.7e-9
+                 value = 57.e-10
                  texname = '\\text{WS}',
                  lhablock = 'DECAY',
                  lhacode = [ 9900011 ])
