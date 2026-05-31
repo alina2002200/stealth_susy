@@ -11,9 +11,9 @@ try:
 except ImportError:
    pass
 
-SVV_effective = Lorentz(name = 'SVV_effective',
-               spins = [ 1, 3, 3 ],
-               structure = 'Metric(2,3)')
+VVS_effective = Lorentz(name = 'SVV_effective',
+               spins = [ 3, 3, 1 ],
+               structure = 'P(1,2)*P(2,1) - P(-1,1)*P(-1,2)*Metric(1,2)')
 
 SVV1 = Lorentz(name = 'SVV1',
                spins = [ 1, 3, 3 ],
