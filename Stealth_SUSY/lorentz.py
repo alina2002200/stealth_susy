@@ -13,7 +13,7 @@ except ImportError:
 
 SVV_effective = Lorentz(name = 'SVV_effective',
                         spins = [ 1, 3, 3 ],
-                        structure = 'P(2,1)*P(3,2) - P(2,2)*P(3,1)')
+                        structure = 'Metric(2,3)*P(2,1)*P(3,1) - P(2,1)*P(2,3)*P(3,1)')
 
 SVV1 = Lorentz(name = 'SVV1',
                spins = [ 1, 3, 3 ],
