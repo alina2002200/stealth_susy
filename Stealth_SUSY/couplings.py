@@ -27,7 +27,7 @@ GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
 
 
 GC_Sgg = Coupling(name = 'GC_Sgg',
-                  value = 'lambda_SYY * alpha_S / (3 * cmath.pi * MY)',
+                  value = 'lambda_SYY * alpha_S / (cmath.sqrt(2)*cmath.pi * MY)',
                   order = {'QCD': 2})
 
 
