@@ -17,6 +17,24 @@ c_n1_a_S1 = Parameter(name = 'c_n1_a_S1',
                       lhablock = 'GAUGE',
                       lhacode = [101])
 
+MY = Parameter(name = 'MY',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1000.0',
+                 texname = 'MY')
+
+lambda_SYY = Parameter(name = 'lambda_SYY',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1.0',
+                 texname = 'lambda_SYY')
+
+alpha_S = Parameter(name = 'alpha_S',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '0.118',
+                 texname = 'alpha_S')
+
 c_Sgg = Parameter(name = 'c_Sgg',
                nature = 'external',
                type = 'real',
