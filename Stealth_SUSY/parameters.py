@@ -35,13 +35,7 @@ alpha_S = Parameter(name = 'alpha_S',
                  value = '0.118',
                  texname = 'alpha_S')
 
-c_Sgg = Parameter(name = 'c_Sgg',
-               nature = 'external',
-               type = 'real',
-               value = 1.0,
-               texname = 'c_Sgg',
-               lhablock = 'GAUGE',
-               lhacode = [100])
+
 
 c_S1SGrav = Parameter(name = 'c_S1SGrav',
                   nature = 'external',
