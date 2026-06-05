@@ -49,7 +49,7 @@ c_S1SGrav = Parameter(name = 'c_S1SGrav',
 MS = Parameter(name = 'MS',
                nature = 'external',
                type = 'real',
-               value = 80.0,
+               value = 100.0,
                texname = 'M_S',
                lhablock = 'MASS',
                lhacode = [9900011])
