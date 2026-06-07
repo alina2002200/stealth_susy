@@ -12,7 +12,7 @@ import lorentz as L
 V1 = Vertex(name = 'V_n1_a_S1',
     particles = [ P.n1, P.S1, P.a ],
     color = ['1'],
-    lorentz = [ L.FFV2 ],
+    lorentz = [ L.FFV_effective ],
     couplings = {(0,0): C.GC_n1_a_S1})
 
 V_2195 = Vertex(name = 'V_2195',
