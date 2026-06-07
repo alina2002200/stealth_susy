@@ -28,12 +28,23 @@ lambda_SYY = Parameter(name = 'lambda_SYY',
                  type = 'real',
                  value = '1.0',
                  texname = 'lambda_SYY')
+lambda_n1aS1 = Parameter(name = 'lambda_n1aS1',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1.0',
+                 texname = 'lambda_n1aS1')
 
 alpha_S = Parameter(name = 'alpha_S',
                  nature = 'internal',
                  type = 'real',
                  value = '0.118',
                  texname = 'alpha_S')
+
+alpha_em = Parameter(name = 'alpha_em',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '0.00729735',
+                 texname = 'alpha_em')
 
 
 
