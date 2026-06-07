@@ -15,6 +15,10 @@ VVS_effective = Lorentz(name = 'SVV_effective',
                spins = [ 3, 3, 1 ],
                structure = 'P(1,2)*P(2,1) - P(-1,1)*P(-1,2)*Metric(1,2)')
 
+FFV_effective = Lorentz(name = 'FFV_effective',
+                        spins = [ 2, 2, 3 ],
+                        structure = 'P(3,2)*P(3,1)')
+
 SVV1 = Lorentz(name = 'SVV1',
                spins = [ 1, 3, 3 ],
                structure = 'P(2,1)*P(3,2) - P(2,2)*P(3,1)')
