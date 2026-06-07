@@ -18,26 +18,16 @@ except ImportError:
 
 
 GC_n1_a_S1 = Coupling(name = 'GC_n1_a_S1',
-                      value = 'complex(0,1)*c_n1_a_S1',
+                      value = 'complex(0,1)*lambda_n1aS1 * alpha_em / (16**cmath.pi * MY)',
                       order = {'QED': 1})
 
-GC_S1SGrav0 = Coupling(name = 'GC_S1SGrav',
-                      value = 'complex(0,1)*c_S1SGrav',
-                      order = {'QED': 1})
-
-GC_S1SGrav1 = Coupling(name = 'GC_S1SGrav',
-                      value = 'complex(0,1)*c_S1SGrav',
-                      order = {'QED': 1})
-GC_S1SGrav2 = Coupling(name = 'GC_S1SGrav',
-                      value = 'complex(0,1)*c_S1SGrav',
-                      order = {'QED': 1})
-GC_S1SGrav3 = Coupling(name = 'GC_S1SGrav',
+GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
                       value = 'complex(0,1)*c_S1SGrav',
                       order = {'QED': 1})
 
 
 GC_Sgg = Coupling(name = 'GC_Sgg',
-                  value = 'lambda_SYY * alpha_S / (6*cmath.sqrt(2)*cmath.pi * MY)',
+                  value = 'complex(0,1)*lambda_SYY * alpha_S / (6*cmath.sqrt(2)*cmath.pi * MY)',
                   order = {'QCD': 2})
 
 
