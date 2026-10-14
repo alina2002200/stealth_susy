@@ -15,7 +15,7 @@ S = Particle(pdg_code = 9900011,
              spin = 1,                    
              color = 1,                   
              mass = Param.MS,             
-             width = Param.ZERO,          
+             width = Param.WS,          
              texname = 'S',
              antitexname = '\\tilde{S}',
              charge = 0,                  
@@ -31,27 +31,14 @@ S1 = Particle(pdg_code = 9900012,
               spin = 2,
               color = 1,
               mass = Param.MS1,
-              width = Param.ZERO,
+              width = Param.WS1,
               texname = '\\tilde{S}_1',
               antitexname = '\\tilde{S}_1',
-              charge = 0)
+              charge = 0,
+              GhostNumber  = 0,
+              Y = 0)
 
 S1__tilde__ = S1.anti()
-
-Y = Particle(pdg_code = 9900021,
-             name = 'Y',
-             antiname = 'Y~',
-             spin = 2,
-             color = 3,
-             mass = Param.MY,
-             width = Param.ZERO,
-             texname = 'Y',
-             antitexname = '\\bar{Y}',
-             charge = 0,
-             LeptonNumber = 0,
-             Y = 0)
-
-Y__tilde__ = Y.anti()
 
 
 a = Particle(pdg_code = 22,
