@@ -7,7 +7,18 @@ from object_library import all_couplings, Coupling
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+GC_n1_a_S1 = Coupling(name = 'GC_n1_a_S1',
+                      value = 'complex(0,1)*lambda_n1aS1 * alpha_em / (16**cmath.pi * MY)',
+                      order = {'QED': 1})
 
+GC_S1SGrav = Coupling(name = 'GC_S1SGrav',
+                      value = 'complex(0,1)*c_S1SGrav',
+                      order = {'QED': 1})
+
+
+GC_Sgg = Coupling(name = 'GC_Sgg',
+                  value = 'complex(0,1)*lambda_SYY * alpha_S / (6*cmath.sqrt(2)*cmath.pi * MY)',
+                  order = {'QCD': 2})
 
 GC_1 = Coupling(name = 'GC_1',
                 value = '-(ee*complex(0,1))/3.',
