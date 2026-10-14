@@ -9,6 +9,87 @@ from object_library import all_parameters, Parameter
 
 from function_library import complexconjugate, re, im, csc, sec, acsc, asec, cot
 
+c_n1_a_S1 = Parameter(name = 'c_n1_a_S1',
+                      nature = 'external',
+                      type = 'real',
+                      value = 1.0,
+                      texname = 'c_n1_a_S1',
+                      lhablock = 'GAUGE',
+                      lhacode = [101])
+
+MY = Parameter(name = 'MY',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1000.0',
+                 texname = 'MY')
+
+lambda_SYY = Parameter(name = 'lambda_SYY',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1.0',
+                 texname = 'lambda_SYY')
+lambda_n1aS1 = Parameter(name = 'lambda_n1aS1',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '1.0',
+                 texname = 'lambda_n1aS1')
+
+alpha_S = Parameter(name = 'alpha_S',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '0.118',
+                 texname = 'alpha_S')
+
+alpha_em = Parameter(name = 'alpha_em',
+                 nature = 'internal',
+                 type = 'real',
+                 value = '0.00729735',
+                 texname = 'alpha_em')
+
+
+
+c_S1SGrav = Parameter(name = 'c_S1SGrav',
+                  nature = 'external',
+                  type = 'real',
+                  value = 1.0,
+                  texname = 'c_S1SGrav',
+                  lhablock = 'GAUGE',
+                  lhacode = [99])
+
+
+MS = Parameter(name = 'MS',
+               nature = 'external',
+               type = 'real',
+               value = 100.0,
+               texname = 'M_S',
+               lhablock = 'MASS',
+               lhacode = [9900011])
+
+MS1 = Parameter(name = 'MS1',
+                nature = 'external',
+                type = 'real',
+                value = 110.0, 
+                texname = 'M_{\\tilde{S}_1}',
+                lhablock = 'MASS',
+                lhacode = [9900012]) 
+
+
+WS = Parameter(name = 'WS',
+                 nature = 'external',
+                 type = 'real',
+                 value = 57.e-10,
+                 texname = '\\text{WS}',
+                 lhablock = 'DECAY',
+                 lhacode = [ 9900011 ])
+
+WS1 = Parameter(name = 'WS1',
+                 nature = 'external',
+                 type = 'real',
+                 value = 0.02,
+                 texname = '\\text{WS1}',
+                 lhablock = 'DECAY',
+                 lhacode = [ 9900012 ])
+
 # This is a default parameter object representing 0.
 ZERO = Parameter(name = 'ZERO',
                  nature = 'internal',
