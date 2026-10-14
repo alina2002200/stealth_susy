@@ -8,6 +8,36 @@ import particles as P
 import couplings as C
 import lorentz as L
 
+V_n1_a_S1 = Vertex(name = 'V_n1_a_S1',
+    particles = [ P.n1, P.S1, P.a ],
+    color = ['1'],
+    lorentz = [ L.FFV_effective ],
+    couplings = {(0,0): C.GC_n1_a_S1})
+
+V_2195 = Vertex(name = 'V_2195',
+              particles = [ P.S1, P.grv, P.S ],
+              color = [ '1' ],
+              lorentz = [ L.FRS4 ],
+              couplings = {(0,0):C.GC_S1SGrav})
+
+V_2196 = Vertex(name = 'V_2196',
+              particles = [ P.S1__tilde__, P.grv, P.S__tilde__ ],
+              color = [ '1' ],
+               lorentz = [ L.FRS4],
+               couplings = {(0,0):C.GC_S1SGrav})
+
+V_Sgg = Vertex(name = 'V_Sgg',
+              particles = [ P.g, P.g, P.S ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.VVS_effective ],
+              couplings = {(0,0): C.GC_Sgg})
+
+V_Sgg1 = Vertex(name = 'V_Sgg1',
+              particles = [ P.g, P.g, P.S__tilde__ ],
+              color = [ 'Identity(1,2)' ],
+              lorentz = [ L.VVS_effective ],
+              couplings = {(0,0):C.GC_Sgg})
+
 
 V_1 = Vertex(name = 'V_1',
              particles = [ P.seL__plus__, P.seL__plus__, P.seL__minus__, P.seL__minus__ ],
